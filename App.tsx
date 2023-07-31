@@ -6,16 +6,19 @@
  */
 
 import React from 'react';
-import { View } from 'react-native';
 import { ThemeProvider } from 'styled-components/native';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 import { theme } from './src/global/styles';
+import { Home } from './src/presentational';
 
 const App = () => {
   return (
-    <ThemeProvider theme={theme}>
-      <View />
-    </ThemeProvider>
+    <SafeAreaProvider>
+      <ThemeProvider theme={theme}>
+        <Home />
+      </ThemeProvider>
+    </SafeAreaProvider>
   );
 };
 
