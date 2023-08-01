@@ -12,19 +12,19 @@ export const productDetailsApi = [
     ],
     benefits: [
       {
-        icon: '',
+        icon: 'calendar-blank-outline',
         description: 'Receba suas vendas em 1 dia útil'
       },
       {
-        icon: '',
+        icon: 'truck-outline',
         description: 'Frete grátis para todo o Brasil'
       },
       {
-        icon: '',
+        icon: 'cellphone-check',
         description: 'Precisa de celular com bluetooth e conectado'
       },
       {
-        icon: '',
+        icon: 'chat-alert-outline',
         description: 'Comprovante via aplicativo e SMS'
       }
     ]

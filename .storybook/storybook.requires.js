@@ -47,6 +47,7 @@ try {
 
 const getStories = () => {
   return {
+    "./.storybook/stories/BenefitItemDetails/benefit-item-details.stories.js": require("./stories/BenefitItemDetails/benefit-item-details.stories.js"),
     "./.storybook/stories/Header/header.stories.js": require("./stories/Header/header.stories.js"),
     "./.storybook/stories/ImageCardSelect/image-card-select.stories.js": require("./stories/ImageCardSelect/image-card-select.stories.js"),
     "./.storybook/stories/ImageDetails/image-details.stories.js": require("./stories/ImageDetails/image-details.stories.js"),
