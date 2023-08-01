@@ -4,12 +4,13 @@ import { ThemeProvider } from 'styled-components/native';
 import { ProductCard } from '../../../src/components';
 import { productsApi } from '../../../src/helpers';
 import { theme } from '../../../src/global/styles';
+import { NavigationContainer } from '@react-navigation/native';
 
 const ProductCardMeta = {
   title: 'Product Card',
   component: ProductCard,
   argTypes: {
-    onPress: { action: 'pressed the button' }
+    handlePressProduct: { action: 'pressed the button' }
   },
   args: {
     item: productsApi[0]
@@ -17,9 +18,11 @@ const ProductCardMeta = {
   decorators: [
     Story => (
       <ThemeProvider theme={theme}>
-        <View style={{ alignItems: 'center', justifyContent: 'center', flex: 1 }}>
-          <Story />
-        </View>
+        <NavigationContainer>
+          <View style={{ alignItems: 'center', justifyContent: 'center', flex: 1 }}>
+            <Story />
+          </View>
+        </NavigationContainer>
       </ThemeProvider>
     )
   ]
