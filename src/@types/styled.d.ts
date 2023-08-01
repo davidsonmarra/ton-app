@@ -9,5 +9,20 @@ declare module 'styled-components/native' {
       text: string;
       label: string;
     };
+    fonts: {
+      primary: string;
+    };
+    fontSizes: {
+      sm: string;
+      md: string;
+      lg: string;
+      xl: string;
+    };
+    fontWeights: {
+      regular: number;
+      medium: number;
+      semiBold: number;
+      bold: number;
+    };
   }
 }
