@@ -6,10 +6,15 @@ export const theme: DefaultTheme = {
     secondary: '#fff',
     background: '#efefef',
     text: '#1e1e1e',
-    label: '#333'
+    label: '#545454'
   },
   fonts: {
-    primary: 'Poppins'
+    primary: {
+      regular: 'Poppins-Regular',
+      medium: 'Poppins-Medium',
+      semiBold: 'Poppins-SemiBold',
+      bold: 'Poppins-Bold'
+    }
   },
   fontSizes: {
     sm: '12px',

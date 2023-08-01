@@ -10,19 +10,18 @@ declare module 'styled-components/native' {
       label: string;
     };
     fonts: {
-      primary: string;
+      primary: {
+        regular: string;
+        medium: string;
+        semiBold: string;
+        bold: string;
+      };
     };
     fontSizes: {
       sm: string;
       md: string;
       lg: string;
       xl: string;
-    };
-    fontWeights: {
-      regular: number;
-      medium: number;
-      semiBold: number;
-      bold: number;
     };
   }
 }

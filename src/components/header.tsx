@@ -23,8 +23,7 @@ const StyledContainer = styled.View<{ topInset: number }>`
 
 const StyledTitle = styled.Text`
   text-align: center;
-  font-family: ${({ theme: { fonts } }) => fonts.primary};
+  font-family: ${({ theme: { fonts } }) => fonts.primary.bold};
   font-size: ${({ theme: { fontSizes } }) => fontSizes.lg};
-  font-weight: ${({ theme: { fontWeights } }) => fontWeights.bold};
   color: ${({ theme: { colors } }) => colors.secondary};
 `;
