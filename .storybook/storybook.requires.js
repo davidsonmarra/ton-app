@@ -49,6 +49,7 @@ const getStories = () => {
   return {
     "./.storybook/stories/Header/header.stories.js": require("./stories/Header/header.stories.js"),
     "./.storybook/stories/ProductCard/product-card.stories.js": require("./stories/ProductCard/product-card.stories.js"),
+    "./.storybook/stories/TitleProductDetails/title-product-details.stories.js": require("./stories/TitleProductDetails/title-product-details.stories.js"),
   };
 };
 

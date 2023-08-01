@@ -1,4 +1,4 @@
 export type ProductsStackParamList = {
-  HomeScreen: undefined;
+  ProductsListScreen: undefined;
   ProductDetailsScreen: { id: number };
 };

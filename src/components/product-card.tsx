@@ -28,22 +28,22 @@ const StyledContainer = styled.TouchableOpacity`
   align-items: center;
 `;
 
-export const StyledImage = styled.Image`
+const StyledImage = styled.Image`
   width: 60px;
   height: 100px;
   margin-right: 16px;
 `;
 
-export const StyledInfoContainer = styled.View``;
+const StyledInfoContainer = styled.View``;
 
-export const StyledName = styled.Text`
+const StyledName = styled.Text`
   font-family: ${({ theme: { fonts } }) => fonts.primary.medium};
   font-size: ${({ theme: { fontSizes } }) => fontSizes.md};
   color: ${({ theme: { colors } }) => colors.text};
   margin-bottom: 8px;
 `;
 
-export const StyledPromo = styled.Text`
+const StyledPromo = styled.Text`
   font-family: ${({ theme: { fonts } }) => fonts.primary.regular};
   font-size: ${({ theme: { fontSizes } }) => fontSizes.md};
   color: ${({ theme: { colors } }) => colors.label};

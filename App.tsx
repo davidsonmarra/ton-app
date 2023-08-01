@@ -14,7 +14,7 @@ import { createServer } from 'miragejs';
 
 import StorybookUIRoot from './.storybook';
 import { theme } from './src/global/styles';
-import { productsApi } from './src/helpers';
+import { productDetailsApi, productsApi } from './src/helpers';
 import { Routes } from './src/routes';
 
 if (window.server) {
@@ -30,7 +30,7 @@ window.server = createServer({
     });
     this.get('/api/products/:id', (_, request) => {
       const id: string = request.params.id;
-      return productsApi.find(product => product.id === Number(id)) || {};
+      return productDetailsApi.find(product => product.id === Number(id)) || {};
     });
   }
 });

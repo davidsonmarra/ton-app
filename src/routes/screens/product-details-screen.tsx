@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useCallback, useLayoutEffect, useState } from 'react';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
-import { Text } from 'react-native';
-import { ProductsStackParamList } from '../../@types';
+import { ProductDetailsDTO, ProductsStackParamList } from '../../@types';
+import { ProductDetails } from '../../presentational';
 
 type ProductDetailsScreenProps = NativeStackScreenProps<
   ProductsStackParamList,
@@ -9,6 +9,20 @@ type ProductDetailsScreenProps = NativeStackScreenProps<
 >;
 
 export const ProductDetailsScreen = ({ route }: ProductDetailsScreenProps) => {
-  console.log(route.params);
-  return <Text>Tese</Text>;
+  const [product, setProduct] = useState({} as ProductDetailsDTO);
+  const [isLoading, setIsLoading] = useState(true);
+  const { id } = route.params;
+
+  const getProduct = useCallback(async () => {
+    const response = await fetch('api/products/' + id);
+    const data = await response.json();
+    setProduct(data);
+    setIsLoading(false);
+  }, [product]);
+
+  useLayoutEffect(() => {
+    getProduct();
+  }, []);
+
+  return <ProductDetails isLoadingApi={isLoading} item={product} />;
 };

@@ -7,9 +7,10 @@ import { useNavigation, NavigationProp } from '@react-navigation/native';
 import { ProductDTO, ProductsStackParamList } from '../@types';
 import { Header, ProductCard } from '../components';
 
-export const Home = () => {
+export const ProductsList = () => {
   const [products, setProducts] = useState([]);
-  const { navigate } = useNavigation<NavigationProp<ProductsStackParamList, 'HomeScreen'>>();
+  const { navigate } =
+    useNavigation<NavigationProp<ProductsStackParamList, 'ProductsListScreen'>>();
 
   const getProducts = useCallback(async () => {
     const response = await fetch('api/products');
@@ -64,26 +65,26 @@ export const StyledContainer = styled(SafeAreaView).attrs({
   background-color: ${({ theme: { colors } }) => colors.background};
 `;
 
-export const StyledContent = styled.View`
+const StyledContent = styled.View`
   flex: 1;
   padding: 24px 24px 0;
 `;
 
-export const StyledText = styled.Text`
+const StyledText = styled.Text`
   font-family: ${({ theme: { fonts } }) => fonts.primary.semiBold};
   font-size: ${({ theme: { fontSizes } }) => fontSizes.lg};
   color: ${({ theme: { colors } }) => colors.text};
   margin-bottom: 8px;
 `;
 
-export const StyledDescription = styled.Text`
+const StyledDescription = styled.Text`
   font-family: ${({ theme: { fonts } }) => fonts.primary.regular};
   font-size: ${({ theme: { fontSizes } }) => fontSizes.lg};
   color: ${({ theme: { colors } }) => colors.label};
   margin-bottom: 24px;
 `;
 
-export const StyledList = styled(
+const StyledList = styled(
   FlatList as new (props: FlatListProps<ProductDTO>) => FlatList<ProductDTO>
 ).attrs({
   contentContainerStyle: {
@@ -91,6 +92,6 @@ export const StyledList = styled(
   }
 })``;
 
-export const StyledSeparator = styled.View`
+const StyledSeparator = styled.View`
   height: 16px;
 `;
