@@ -1,15 +1,17 @@
 import React from 'react';
 import { TouchableOpacityProps } from 'react-native/types';
 import styled from 'styled-components/native';
-import { ProductDTO } from '../@types';
+import { useNavigation, NavigationProp } from '@react-navigation/native';
+import { ProductDTO, ProductsStackParamList } from '../@types';
 
 interface ProductCardProps extends TouchableOpacityProps {
   item: ProductDTO;
 }
 
-export const ProductCard = ({ item: { name, img, promo } }: ProductCardProps) => {
+export const ProductCard = ({ item: { id, name, img, promo } }: ProductCardProps) => {
+  const { navigate } = useNavigation<NavigationProp<ProductsStackParamList, 'HomeScreen'>>();
   return (
-    <StyledContainer onPress={() => console.log('clicou')}>
+    <StyledContainer onPress={() => navigate('ProductDetailsScreen', { id })}>
       <StyledImage source={{ uri: img }} resizeMode='contain' />
       <StyledInfoContainer>
         <StyledName>Maquininha {name}</StyledName>

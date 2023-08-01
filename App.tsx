@@ -6,14 +6,16 @@
  */
 
 import React from 'react';
+import { StatusBar } from 'react-native';
 import './environments';
 import { ThemeProvider } from 'styled-components/native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
+import { createServer } from 'miragejs';
+
 import StorybookUIRoot from './.storybook';
 import { theme } from './src/global/styles';
-import { Home } from './src/presentational';
-import { createServer } from 'miragejs';
 import { productsApi } from './src/helpers';
+import { Routes } from './src/routes';
 
 if (window.server) {
   window.server.shutdown();
@@ -26,14 +28,19 @@ window.server = createServer({
         products: productsApi
       };
     });
+    this.get('/api/products/:id', (_, request) => {
+      const id: string = request.params.id;
+      return productsApi.find(product => product.id === Number(id)) || {};
+    });
   }
 });
 
 const App = () => {
   return (
     <SafeAreaProvider>
+      <StatusBar backgroundColor='transparent' translucent barStyle='light-content' />
       <ThemeProvider theme={theme}>
-        <Home />
+        <Routes />
       </ThemeProvider>
     </SafeAreaProvider>
   );
