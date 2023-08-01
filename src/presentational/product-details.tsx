@@ -2,7 +2,7 @@ import React from 'react';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import styled from 'styled-components/native';
 import { ProductDetailsDTO } from '../@types';
-import { Header, TitleProductDetails } from '../components';
+import { Header, ImageDetails, TitleProductDetails } from '../components';
 
 interface ProductDetailsProps {
   isLoadingApi: boolean;
@@ -17,6 +17,7 @@ export const ProductDetails = ({ isLoadingApi, item }: ProductDetailsProps) => {
           <Header title={`${item.title}  ${item.subTitle}`} />
           <StyledContent>
             <TitleProductDetails title={item.title} subTitle={item.subTitle} />
+            <ImageDetails images={item.images} />
           </StyledContent>
         </>
       ) : (

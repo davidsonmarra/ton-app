@@ -48,6 +48,8 @@ try {
 const getStories = () => {
   return {
     "./.storybook/stories/Header/header.stories.js": require("./stories/Header/header.stories.js"),
+    "./.storybook/stories/ImageCardSelect/image-card-select.stories.js": require("./stories/ImageCardSelect/image-card-select.stories.js"),
+    "./.storybook/stories/ImageDetails/image-details.stories.js": require("./stories/ImageDetails/image-details.stories.js"),
     "./.storybook/stories/ProductCard/product-card.stories.js": require("./stories/ProductCard/product-card.stories.js"),
     "./.storybook/stories/TitleProductDetails/title-product-details.stories.js": require("./stories/TitleProductDetails/title-product-details.stories.js"),
   };
