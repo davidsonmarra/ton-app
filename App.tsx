@@ -6,9 +6,10 @@
  */
 
 import React from 'react';
+import './environments';
 import { ThemeProvider } from 'styled-components/native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
-
+import StorybookUIRoot from './.storybook';
 import { theme } from './src/global/styles';
 import { Home } from './src/presentational';
 
@@ -22,4 +23,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default RUN_STORYBOOK ? StorybookUIRoot : App;
