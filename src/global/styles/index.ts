@@ -20,7 +20,9 @@ export const theme: DefaultTheme = {
     sm: '12px',
     md: '16px',
     lg: '18px',
-    xl: '24px'
+    xl: '24px',
+    xxl: '32px',
+    xxxl: '64px'
   },
   fontWeights: {
     regular: 400,

@@ -11,6 +11,8 @@ export interface ProductDetailsDTO {
   subTitle: string;
   oldPrice: string;
   currentPrice: string;
+  installmentsValue: string;
+  installmentsValueCents: string;
   images: string[];
   benefits: {
     icon: string;

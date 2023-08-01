@@ -3,8 +3,10 @@ export const productDetailsApi = [
     id: 1,
     title: 'T1',
     subTitle: 'Promo',
-    oldPrice: 'R$ 198,80',
-    currentPrice: 'R$ 106,80',
+    oldPrice: '198,80',
+    currentPrice: '106,80',
+    installmentsValue: '8',
+    installmentsValueCents: '90',
     images: [
       'https://res.cloudinary.com/dunz5zfpt/fl_progressive/f_auto,c_limit,w_384,q_auto/site-ton/maquininhas/machine-t1-1',
       'https://res.cloudinary.com/dunz5zfpt/fl_progressive/f_auto,c_limit,w_384,q_auto/site-ton/maquininhas/machine-t1-2',

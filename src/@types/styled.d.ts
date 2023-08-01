@@ -22,6 +22,8 @@ declare module 'styled-components/native' {
       md: string;
       lg: string;
       xl: string;
+      xxl: string;
+      xxxl: string;
     };
   }
 }
