@@ -4,17 +4,20 @@ import styled from 'styled-components/native';
 import { ProductDetailsDTO } from '../@types';
 import { Header, ImageDetails, PriceDetails, TitleProductDetails } from '../components';
 import { BenefitItemDetails } from '../components';
+import { Button } from '../components';
 
 interface ProductDetailsProps {
   isLoadingApi: boolean;
   item: ProductDetailsDTO;
   handlePressLeftIcon: () => void;
+  bottomInset: number;
 }
 
 export const ProductDetails = ({
   isLoadingApi,
   item,
-  handlePressLeftIcon
+  handlePressLeftIcon,
+  bottomInset
 }: ProductDetailsProps) => {
   return (
     <StyledContainer>
@@ -27,8 +30,16 @@ export const ProductDetails = ({
           />
           <StyledContent>
             <TitleProductDetails title={item.title} subTitle={item.subTitle} />
+            <StyledSection />
             <ImageDetails images={item.images} />
-            <StyledBenefitsContainer>
+            <StyledSection>
+              {item.benefits.map((benefit, index) => (
+                <BenefitItemDetails
+                  key={index}
+                  icon={benefit.icon}
+                  description={benefit.description}
+                />
+              ))}
               {item.benefits.map((benefit, index) => (
                 <BenefitItemDetails
                   key={index}
@@ -44,11 +55,17 @@ export const ProductDetails = ({
                   installmentsValueCents={item.installmentsValueCents}
                 />
               </StyledPriceDetailsContainer>
-            </StyledBenefitsContainer>
+            </StyledSection>
           </StyledContent>
+          <StyledButtonContainer bottomInset={bottomInset}>
+            <Button label='Comprar' />
+          </StyledButtonContainer>
         </>
       ) : (
-        <StyledLoading size='large' />
+        <>
+          <Header title='' leftIcon='arrow-back' handlePressLeftIcon={handlePressLeftIcon} />
+          <StyledLoading size='large' />
+        </>
       )}
     </StyledContainer>
   );
@@ -64,17 +81,26 @@ const StyledContainer = styled(SafeAreaView).attrs({
 const StyledContent = styled.ScrollView.attrs({
   showsVerticalScrollIndicator: false,
   contentContainerStyle: {
-    paddingVertical: 24,
-    paddingHorizontal: 24
+    paddingTop: 24,
+    paddingHorizontal: 24,
+    paddingBottom: 32
   }
 })``;
 
-const StyledBenefitsContainer = styled.View`
+const StyledSection = styled.View`
   margin-top: 24px;
 `;
 
 const StyledPriceDetailsContainer = styled.View`
   margin: 24px auto;
+`;
+
+const StyledButtonContainer = styled.View<{ bottomInset: number }>`
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 0 24px ${({ bottomInset }) => bottomInset + 12}px;
+  background-color: ${({ theme: { colors } }) => colors.background};
 `;
 
 const StyledLoading = styled.ActivityIndicator.attrs(({ theme: { colors } }) => ({
@@ -83,4 +109,5 @@ const StyledLoading = styled.ActivityIndicator.attrs(({ theme: { colors } }) => 
   flex: 1;
   justify-content: center;
   align-items: center;
+  background-color: ${({ theme: { colors } }) => colors.background};
 `;

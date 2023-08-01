@@ -2,6 +2,7 @@ import React, { useCallback, useLayoutEffect, useState } from 'react';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { ProductDetailsDTO, ProductsStackParamList } from '../../@types';
 import { ProductDetails } from '../../presentational';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 type ProductDetailsScreenProps = NativeStackScreenProps<
   ProductsStackParamList,
@@ -12,6 +13,8 @@ export const ProductDetailsScreen = ({ navigation, route }: ProductDetailsScreen
   const [product, setProduct] = useState({} as ProductDetailsDTO);
   const [isLoading, setIsLoading] = useState(true);
   const { id } = route.params;
+
+  const { bottom } = useSafeAreaInsets();
 
   const getProduct = useCallback(async () => {
     const response = await fetch('api/products/' + id);
@@ -33,6 +36,7 @@ export const ProductDetailsScreen = ({ navigation, route }: ProductDetailsScreen
       isLoadingApi={isLoading}
       item={product}
       handlePressLeftIcon={handlePressLeftIcon}
+      bottomInset={bottom}
     />
   );
 };

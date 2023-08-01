@@ -1,3 +1,4 @@
+export { Button } from './button';
 export { BenefitItemDetails } from './benefit-item-details';
 export { Header } from './header';
 export { ImageCardSelect } from './image-card-select';
