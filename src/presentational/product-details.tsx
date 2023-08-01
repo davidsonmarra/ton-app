@@ -10,14 +10,12 @@ interface ProductDetailsProps {
   isLoadingApi: boolean;
   item: ProductDetailsDTO;
   handlePressLeftIcon: () => void;
-  bottomInset: number;
 }
 
 export const ProductDetails = ({
   isLoadingApi,
   item,
-  handlePressLeftIcon,
-  bottomInset
+  handlePressLeftIcon
 }: ProductDetailsProps) => {
   return (
     <StyledContainer>
@@ -57,7 +55,7 @@ export const ProductDetails = ({
               </StyledPriceDetailsContainer>
             </StyledSection>
           </StyledContent>
-          <StyledButtonContainer bottomInset={bottomInset}>
+          <StyledButtonContainer>
             <Button label='Comprar' />
           </StyledButtonContainer>
         </>
@@ -95,11 +93,11 @@ const StyledPriceDetailsContainer = styled.View`
   margin: 24px auto;
 `;
 
-const StyledButtonContainer = styled.View<{ bottomInset: number }>`
+const StyledButtonContainer = styled.View`
   width: 100%;
   position: absolute;
   bottom: 0;
-  padding: 0 24px ${({ bottomInset }) => bottomInset + 12}px;
+  padding: 0 24px 12px;
   background-color: ${({ theme: { colors } }) => colors.background};
 `;
 
