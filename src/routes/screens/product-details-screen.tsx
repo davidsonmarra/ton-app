@@ -8,7 +8,7 @@ type ProductDetailsScreenProps = NativeStackScreenProps<
   'ProductDetailsScreen'
 >;
 
-export const ProductDetailsScreen = ({ route }: ProductDetailsScreenProps) => {
+export const ProductDetailsScreen = ({ navigation, route }: ProductDetailsScreenProps) => {
   const [product, setProduct] = useState({} as ProductDetailsDTO);
   const [isLoading, setIsLoading] = useState(true);
   const { id } = route.params;
@@ -20,9 +20,19 @@ export const ProductDetailsScreen = ({ route }: ProductDetailsScreenProps) => {
     setIsLoading(false);
   }, [product]);
 
+  const handlePressLeftIcon = useCallback(() => {
+    navigation.goBack();
+  }, []);
+
   useLayoutEffect(() => {
     getProduct();
   }, []);
 
-  return <ProductDetails isLoadingApi={isLoading} item={product} />;
+  return (
+    <ProductDetails
+      isLoadingApi={isLoading}
+      item={product}
+      handlePressLeftIcon={handlePressLeftIcon}
+    />
+  );
 };

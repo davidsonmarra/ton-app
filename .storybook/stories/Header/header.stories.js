@@ -27,6 +27,32 @@ export const Basic = {};
 
 export const LeftIcon = {
   args: {
-    title: 'T3 Smart Promo'
+    title: 'T3 Smart Promo',
+    leftIcon: 'arrow-back'
+  },
+  argTypes: {
+    handlePressLeftIcon: { action: 'pressed the left button' }
+  }
+};
+
+export const RightIcon = {
+  args: {
+    title: 'T3 Smart Promo',
+    rightIcon: 'info-outline'
+  },
+  argTypes: {
+    handlePressRightIcon: { action: 'pressed the right button' }
+  }
+};
+
+export const LeftAndRightIcon = {
+  args: {
+    title: 'T3 Smart Promo',
+    leftIcon: 'arrow-back',
+    rightIcon: 'info-outline'
+  },
+  argTypes: {
+    handlePressLeftIcon: { action: 'pressed the left button' },
+    handlePressRightIcon: { action: 'pressed the right button' }
   }
 };

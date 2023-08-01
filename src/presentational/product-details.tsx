@@ -7,14 +7,23 @@ import { Header, ImageDetails, TitleProductDetails } from '../components';
 interface ProductDetailsProps {
   isLoadingApi: boolean;
   item: ProductDetailsDTO;
+  handlePressLeftIcon: () => void;
 }
 
-export const ProductDetails = ({ isLoadingApi, item }: ProductDetailsProps) => {
+export const ProductDetails = ({
+  isLoadingApi,
+  item,
+  handlePressLeftIcon
+}: ProductDetailsProps) => {
   return (
     <StyledContainer>
       {!isLoadingApi ? (
         <>
-          <Header title={`${item.title}  ${item.subTitle}`} />
+          <Header
+            title={`${item.title}  ${item.subTitle}`}
+            leftIcon='arrow-back'
+            handlePressLeftIcon={handlePressLeftIcon}
+          />
           <StyledContent>
             <TitleProductDetails title={item.title} subTitle={item.subTitle} />
             <ImageDetails images={item.images} />
