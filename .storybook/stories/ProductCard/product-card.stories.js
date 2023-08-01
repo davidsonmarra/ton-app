@@ -2,6 +2,7 @@ import React from 'react';
 import { View } from 'react-native';
 import { ThemeProvider } from 'styled-components/native';
 import { ProductCard } from '../../../src/components';
+import { productsApi } from '../../../src/helpers';
 import { theme } from '../../../src/global/styles';
 
 const ProductCardMeta = {
@@ -11,12 +12,7 @@ const ProductCardMeta = {
     onPress: { action: 'pressed the button' }
   },
   args: {
-    item: {
-      id: 1,
-      name: 'T1',
-      promo: '12x de R$ 1,90',
-      img: 'https://assets.lojastonemais.com.br/images/products/TON_D150/medium.png'
-    }
+    item: productsApi[0]
   },
   decorators: [
     Story => (
