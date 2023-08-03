@@ -28,7 +28,7 @@ export const PriceDetails = ({
         </StyledRightInstallmentsContainer>
         <StyledPriceContainer>
           <StyledPrice>{installmentsValue}</StyledPrice>
-          <StyledCents>{installmentsValueCents}</StyledCents>
+          <StyledCents>,{installmentsValueCents}</StyledCents>
         </StyledPriceContainer>
       </StyledRightContainer>
     </StyledContainer>

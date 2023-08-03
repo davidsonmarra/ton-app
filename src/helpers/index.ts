@@ -1,2 +1,2 @@
-export { productDetailsApi } from './productDetailsApi';
-export { productsApi } from './productsApi';
+export { productDetailsApi } from './product-details-api';
+export { productsApi } from './products-api';

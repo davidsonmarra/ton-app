@@ -38,13 +38,6 @@ export const ProductDetails = ({
                   description={benefit.description}
                 />
               ))}
-              {item.benefits.map((benefit, index) => (
-                <BenefitItemDetails
-                  key={index}
-                  icon={benefit.icon}
-                  description={benefit.description}
-                />
-              ))}
               <StyledPriceDetailsContainer>
                 <PriceDetails
                   currentPrice={item.currentPrice}
