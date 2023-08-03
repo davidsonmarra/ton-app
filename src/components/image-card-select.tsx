@@ -23,6 +23,7 @@ export const ImageCardSelect = ({ img, isSelected, handlePressCard }: ImageCardS
       }}
       isSelected={isSelected}
       onPress={() => handlePressCard(img)}
+      testID='image-card-select-button'
     >
       <StyledImage source={{ uri: img }} resizeMode='contain' />
     </StyledContainer>

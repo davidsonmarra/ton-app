@@ -23,12 +23,24 @@ export const Header = ({
 
   return (
     <StyledContainer topInset={top}>
-      <StyledButtonIcon onPress={handlePressLeftIcon} disabled={!leftIcon}>
-        {leftIcon && <Icon name={leftIcon} color={colors.secondary} size={24} />}
+      <StyledButtonIcon
+        onPress={handlePressLeftIcon}
+        disabled={!leftIcon}
+        testID='header-left-button'
+      >
+        {leftIcon && (
+          <Icon name={leftIcon} color={colors.secondary} size={24} testID='header-left-icon' />
+        )}
       </StyledButtonIcon>
       <StyledTitle>{title}</StyledTitle>
-      <StyledButtonIcon onPress={handlePressRightIcon} disabled={!rightIcon}>
-        {rightIcon && <Icon name={rightIcon} color={colors.secondary} size={24} />}
+      <StyledButtonIcon
+        onPress={handlePressRightIcon}
+        disabled={!rightIcon}
+        testID='header-button-right'
+      >
+        {rightIcon && (
+          <Icon name={rightIcon} color={colors.secondary} size={24} testID='header-right-icon' />
+        )}
       </StyledButtonIcon>
     </StyledContainer>
   );

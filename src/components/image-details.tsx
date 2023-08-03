@@ -10,7 +10,7 @@ export const ImageDetails = ({ images }: ImageDetailsProps) => {
   const [img, setImg] = useState(images[0]);
   return (
     <>
-      <StyledImage source={{ uri: img }} resizeMode='contain' />
+      <StyledImage source={{ uri: img }} resizeMode='contain' testID='image' />
       <StyledSelectContainer>
         {images.map(item => (
           <ImageCardSelect

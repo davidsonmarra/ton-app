@@ -1,0 +1,258 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ImageDetails should match a snapshot 1`] = `
+[
+  <Image
+    resizeMode="contain"
+    source={
+      {
+        "uri": "url1",
+      }
+    }
+    style={
+      {
+        "height": 250,
+        "marginBottom": 24,
+        "marginLeft": "auto",
+        "marginRight": "auto",
+        "marginTop": 0,
+        "width": 250,
+      }
+    }
+    testID="image"
+  />,
+  <View
+    style={
+      {
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "marginBottom": 0,
+        "marginLeft": "auto",
+        "marginRight": "auto",
+        "marginTop": 0,
+        "width": 250,
+      }
+    }
+  >
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "backgroundColor": "#fff",
+          "borderBottomLeftRadius": 8,
+          "borderBottomRightRadius": 8,
+          "borderColor": "#1Ec677",
+          "borderStyle": "solid",
+          "borderTopLeftRadius": 8,
+          "borderTopRightRadius": 8,
+          "borderWidth": 2,
+          "elevation": 9,
+          "height": 100,
+          "opacity": 1,
+          "paddingBottom": 12,
+          "paddingLeft": 12,
+          "paddingRight": 12,
+          "paddingTop": 12,
+          "shadowColor": "#000",
+          "shadowOffset": {
+            "height": 4,
+            "width": 0,
+          },
+          "shadowOpacity": 0.32,
+          "shadowRadius": 5.46,
+          "width": 71.42857142857143,
+        }
+      }
+      testID="image-card-select-button"
+    >
+      <Image
+        resizeMode="contain"
+        source={
+          {
+            "uri": "url1",
+          }
+        }
+        style={
+          {
+            "flexBasis": 0,
+            "flexGrow": 1,
+            "flexShrink": 1,
+          }
+        }
+      />
+    </View>
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "backgroundColor": "#fff",
+          "borderBottomLeftRadius": 8,
+          "borderBottomRightRadius": 8,
+          "borderColor": "transparent",
+          "borderStyle": "solid",
+          "borderTopLeftRadius": 8,
+          "borderTopRightRadius": 8,
+          "borderWidth": 2,
+          "elevation": 9,
+          "height": 100,
+          "opacity": 1,
+          "paddingBottom": 12,
+          "paddingLeft": 12,
+          "paddingRight": 12,
+          "paddingTop": 12,
+          "shadowColor": "#000",
+          "shadowOffset": {
+            "height": 4,
+            "width": 0,
+          },
+          "shadowOpacity": 0.32,
+          "shadowRadius": 5.46,
+          "width": 71.42857142857143,
+        }
+      }
+      testID="image-card-select-button"
+    >
+      <Image
+        resizeMode="contain"
+        source={
+          {
+            "uri": "url2",
+          }
+        }
+        style={
+          {
+            "flexBasis": 0,
+            "flexGrow": 1,
+            "flexShrink": 1,
+          }
+        }
+      />
+    </View>
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "backgroundColor": "#fff",
+          "borderBottomLeftRadius": 8,
+          "borderBottomRightRadius": 8,
+          "borderColor": "transparent",
+          "borderStyle": "solid",
+          "borderTopLeftRadius": 8,
+          "borderTopRightRadius": 8,
+          "borderWidth": 2,
+          "elevation": 9,
+          "height": 100,
+          "opacity": 1,
+          "paddingBottom": 12,
+          "paddingLeft": 12,
+          "paddingRight": 12,
+          "paddingTop": 12,
+          "shadowColor": "#000",
+          "shadowOffset": {
+            "height": 4,
+            "width": 0,
+          },
+          "shadowOpacity": 0.32,
+          "shadowRadius": 5.46,
+          "width": 71.42857142857143,
+        }
+      }
+      testID="image-card-select-button"
+    >
+      <Image
+        resizeMode="contain"
+        source={
+          {
+            "uri": "url3",
+          }
+        }
+        style={
+          {
+            "flexBasis": 0,
+            "flexGrow": 1,
+            "flexShrink": 1,
+          }
+        }
+      />
+    </View>
+  </View>,
+]
+`;

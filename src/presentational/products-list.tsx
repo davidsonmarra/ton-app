@@ -30,6 +30,7 @@ export const ProductsList = ({ products = [], handlePressProduct }: ProductsList
           ListHeaderComponent={listHeaderComponent}
           ItemSeparatorComponent={StyledSeparator}
           scrollEventThrottle={16}
+          testID='products-list'
         />
       </StyledContent>
     </StyledContainer>

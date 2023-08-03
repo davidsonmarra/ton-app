@@ -1,0 +1,849 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductDetails should match a snapshot 1`] = `
+<RNCSafeAreaView
+  edges={
+    {
+      "bottom": "additive",
+      "left": "additive",
+      "right": "additive",
+      "top": "off",
+    }
+  }
+  style={
+    {
+      "backgroundColor": "#efefef",
+      "flexBasis": 0,
+      "flexGrow": 1,
+      "flexShrink": 1,
+    }
+  }
+>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "backgroundColor": "#1Ec677",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "paddingBottom": 12,
+        "paddingLeft": 12,
+        "paddingRight": 12,
+        "paddingTop": 12,
+      }
+    }
+    topInset={0}
+  >
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": false,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "opacity": 1,
+          "width": 32,
+        }
+      }
+      testID="header-left-button"
+    >
+      <Text
+        allowFontScaling={false}
+        selectable={false}
+        style={
+          [
+            {
+              "color": "#fff",
+              "fontSize": 24,
+            },
+            undefined,
+            {
+              "fontFamily": "Material Icons",
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+            },
+            {},
+          ]
+        }
+        testID="header-left-icon"
+      >
+        
+      </Text>
+    </View>
+    <Text
+      style={
+        {
+          "color": "#fff",
+          "fontFamily": "Poppins-Bold",
+          "fontSize": 18,
+          "textAlign": "center",
+        }
+      }
+    >
+      T1  Promo
+    </Text>
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": true,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={false}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "opacity": 1,
+          "width": 32,
+        }
+      }
+      testID="header-button-right"
+    />
+  </View>
+  <RCTScrollView
+    contentContainerStyle={
+      {
+        "paddingBottom": 32,
+        "paddingHorizontal": 24,
+        "paddingTop": 24,
+      }
+    }
+    showsVerticalScrollIndicator={false}
+    style={{}}
+  >
+    <View>
+      <View
+        style={
+          {
+            "flexDirection": "row",
+            "justifyContent": "center",
+          }
+        }
+      >
+        <Text
+          style={
+            {
+              "color": "#1e1e1e",
+              "fontFamily": "Poppins-Bold",
+              "fontSize": 24,
+            }
+          }
+        >
+          T1
+        </Text>
+        <Text
+          style={
+            {
+              "color": "#1e1e1e",
+              "fontFamily": "Poppins-Medium",
+              "fontSize": 24,
+            }
+          }
+        >
+           
+          Promo
+        </Text>
+      </View>
+      <View
+        style={
+          {
+            "marginTop": 24,
+          }
+        }
+      />
+      <Image
+        resizeMode="contain"
+        source={
+          {
+            "uri": "https://res.cloudinary.com/dunz5zfpt/fl_progressive/f_auto,c_limit,w_384,q_auto/site-ton/maquininhas/machine-t1-1",
+          }
+        }
+        style={
+          {
+            "height": 250,
+            "marginBottom": 24,
+            "marginLeft": "auto",
+            "marginRight": "auto",
+            "marginTop": 0,
+            "width": 250,
+          }
+        }
+        testID="image"
+      />
+      <View
+        style={
+          {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "marginBottom": 0,
+            "marginLeft": "auto",
+            "marginRight": "auto",
+            "marginTop": 0,
+            "width": 250,
+          }
+        }
+      >
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            {
+              "backgroundColor": "#fff",
+              "borderBottomLeftRadius": 8,
+              "borderBottomRightRadius": 8,
+              "borderColor": "#1Ec677",
+              "borderStyle": "solid",
+              "borderTopLeftRadius": 8,
+              "borderTopRightRadius": 8,
+              "borderWidth": 2,
+              "elevation": 9,
+              "height": 100,
+              "opacity": 1,
+              "paddingBottom": 12,
+              "paddingLeft": 12,
+              "paddingRight": 12,
+              "paddingTop": 12,
+              "shadowColor": "#000",
+              "shadowOffset": {
+                "height": 4,
+                "width": 0,
+              },
+              "shadowOpacity": 0.32,
+              "shadowRadius": 5.46,
+              "width": 71.42857142857143,
+            }
+          }
+          testID="image-card-select-button"
+        >
+          <Image
+            resizeMode="contain"
+            source={
+              {
+                "uri": "https://res.cloudinary.com/dunz5zfpt/fl_progressive/f_auto,c_limit,w_384,q_auto/site-ton/maquininhas/machine-t1-1",
+              }
+            }
+            style={
+              {
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+              }
+            }
+          />
+        </View>
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            {
+              "backgroundColor": "#fff",
+              "borderBottomLeftRadius": 8,
+              "borderBottomRightRadius": 8,
+              "borderColor": "transparent",
+              "borderStyle": "solid",
+              "borderTopLeftRadius": 8,
+              "borderTopRightRadius": 8,
+              "borderWidth": 2,
+              "elevation": 9,
+              "height": 100,
+              "opacity": 1,
+              "paddingBottom": 12,
+              "paddingLeft": 12,
+              "paddingRight": 12,
+              "paddingTop": 12,
+              "shadowColor": "#000",
+              "shadowOffset": {
+                "height": 4,
+                "width": 0,
+              },
+              "shadowOpacity": 0.32,
+              "shadowRadius": 5.46,
+              "width": 71.42857142857143,
+            }
+          }
+          testID="image-card-select-button"
+        >
+          <Image
+            resizeMode="contain"
+            source={
+              {
+                "uri": "https://res.cloudinary.com/dunz5zfpt/fl_progressive/f_auto,c_limit,w_384,q_auto/site-ton/maquininhas/machine-t1-2",
+              }
+            }
+            style={
+              {
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+              }
+            }
+          />
+        </View>
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            {
+              "backgroundColor": "#fff",
+              "borderBottomLeftRadius": 8,
+              "borderBottomRightRadius": 8,
+              "borderColor": "transparent",
+              "borderStyle": "solid",
+              "borderTopLeftRadius": 8,
+              "borderTopRightRadius": 8,
+              "borderWidth": 2,
+              "elevation": 9,
+              "height": 100,
+              "opacity": 1,
+              "paddingBottom": 12,
+              "paddingLeft": 12,
+              "paddingRight": 12,
+              "paddingTop": 12,
+              "shadowColor": "#000",
+              "shadowOffset": {
+                "height": 4,
+                "width": 0,
+              },
+              "shadowOpacity": 0.32,
+              "shadowRadius": 5.46,
+              "width": 71.42857142857143,
+            }
+          }
+          testID="image-card-select-button"
+        >
+          <Image
+            resizeMode="contain"
+            source={
+              {
+                "uri": "https://res.cloudinary.com/dunz5zfpt/fl_progressive/f_auto,c_limit,w_384,q_auto/site-ton/maquininhas/machine-t1-3",
+              }
+            }
+            style={
+              {
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+              }
+            }
+          />
+        </View>
+      </View>
+      <View
+        style={
+          {
+            "marginTop": 24,
+          }
+        }
+      >
+        <View
+          style={
+            {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "marginBottom": 8,
+            }
+          }
+        >
+          <Text
+            allowFontScaling={false}
+            selectable={false}
+            style={
+              [
+                {
+                  "color": "#1Ec677",
+                  "fontSize": 24,
+                },
+                undefined,
+                {
+                  "fontFamily": "Material Design Icons",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                },
+                {},
+              ]
+            }
+          >
+            󰭦
+          </Text>
+          <Text
+            style={
+              {
+                "color": "#1e1e1e",
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+                "fontFamily": "Poppins-Regular",
+                "fontSize": 16,
+                "marginLeft": 8,
+              }
+            }
+          >
+            Receba suas vendas em 1 dia útil
+          </Text>
+        </View>
+        <View
+          style={
+            {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "marginBottom": 8,
+            }
+          }
+        >
+          <Text
+            allowFontScaling={false}
+            selectable={false}
+            style={
+              [
+                {
+                  "color": "#1Ec677",
+                  "fontSize": 24,
+                },
+                undefined,
+                {
+                  "fontFamily": "Material Design Icons",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                },
+                {},
+              ]
+            }
+          >
+            󱊝
+          </Text>
+          <Text
+            style={
+              {
+                "color": "#1e1e1e",
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+                "fontFamily": "Poppins-Regular",
+                "fontSize": 16,
+                "marginLeft": 8,
+              }
+            }
+          >
+            Frete grátis para todo o Brasil
+          </Text>
+        </View>
+        <View
+          style={
+            {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "marginBottom": 8,
+            }
+          }
+        >
+          <Text
+            allowFontScaling={false}
+            selectable={false}
+            style={
+              [
+                {
+                  "color": "#1Ec677",
+                  "fontSize": 24,
+                },
+                undefined,
+                {
+                  "fontFamily": "Material Design Icons",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                },
+                {},
+              ]
+            }
+          >
+            󱟽
+          </Text>
+          <Text
+            style={
+              {
+                "color": "#1e1e1e",
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+                "fontFamily": "Poppins-Regular",
+                "fontSize": 16,
+                "marginLeft": 8,
+              }
+            }
+          >
+            Precisa de celular com bluetooth e conectado
+          </Text>
+        </View>
+        <View
+          style={
+            {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "marginBottom": 8,
+            }
+          }
+        >
+          <Text
+            allowFontScaling={false}
+            selectable={false}
+            style={
+              [
+                {
+                  "color": "#1Ec677",
+                  "fontSize": 24,
+                },
+                undefined,
+                {
+                  "fontFamily": "Material Design Icons",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                },
+                {},
+              ]
+            }
+          >
+            󱋉
+          </Text>
+          <Text
+            style={
+              {
+                "color": "#1e1e1e",
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+                "fontFamily": "Poppins-Regular",
+                "fontSize": 16,
+                "marginLeft": 8,
+              }
+            }
+          >
+            Comprovante via aplicativo e SMS
+          </Text>
+        </View>
+        <View
+          style={
+            {
+              "marginBottom": 24,
+              "marginLeft": "auto",
+              "marginRight": "auto",
+              "marginTop": 24,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "alignItems": "center",
+                "flexDirection": "row",
+              }
+            }
+          >
+            <View
+              style={
+                {
+                  "marginRight": 24,
+                }
+              }
+            >
+              <Text
+                style={
+                  {
+                    "color": "#656565",
+                    "fontFamily": "Poppins-Regular",
+                    "fontSize": 12,
+                    "textDecorationColor": "black",
+                    "textDecorationLine": "line-through",
+                    "textDecorationStyle": "solid",
+                  }
+                }
+              >
+                R$ 
+                198,80
+              </Text>
+              <Text
+                style={
+                  {
+                    "color": "#1e1e1e",
+                    "fontFamily": "Poppins-SemiBold",
+                    "fontSize": 16,
+                  }
+                }
+              >
+                R$ 
+                106,80
+              </Text>
+              <Text
+                style={
+                  {
+                    "color": "#656565",
+                    "fontFamily": "Poppins-Regular",
+                    "fontSize": 12,
+                  }
+                }
+              >
+                à vista ou
+              </Text>
+            </View>
+            <View
+              style={
+                {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <View
+                style={{}}
+              >
+                <Text
+                  style={
+                    {
+                      "color": "#1e1e1e",
+                      "fontFamily": "Poppins-SemiBold",
+                      "fontSize": 12,
+                    }
+                  }
+                >
+                  12x
+                </Text>
+                <Text
+                  style={
+                    {
+                      "color": "#1Ec677",
+                      "fontFamily": "Poppins-SemiBold",
+                      "fontSize": 12,
+                    }
+                  }
+                >
+                  R$
+                </Text>
+              </View>
+              <View
+                style={
+                  {
+                    "alignItems": "flex-start",
+                    "flexDirection": "row",
+                    "justifyContent": "flex-start",
+                  }
+                }
+              >
+                <Text
+                  style={
+                    {
+                      "color": "#1Ec677",
+                      "fontFamily": "Poppins-Bold",
+                      "fontSize": 64,
+                    }
+                  }
+                >
+                  8
+                </Text>
+                <Text
+                  style={
+                    {
+                      "color": "#1Ec677",
+                      "fontFamily": "Poppins-SemiBold",
+                      "fontSize": 16,
+                    }
+                  }
+                >
+                  ,
+                  90
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+  <View
+    style={
+      {
+        "backgroundColor": "#efefef",
+        "bottom": 0,
+        "paddingBottom": 12,
+        "paddingLeft": 24,
+        "paddingRight": 24,
+        "paddingTop": 0,
+        "position": "absolute",
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={false}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "backgroundColor": "#1Ec677",
+          "borderBottomLeftRadius": 50,
+          "borderBottomRightRadius": 50,
+          "borderTopLeftRadius": 50,
+          "borderTopRightRadius": 50,
+          "opacity": 1,
+          "paddingBottom": 12,
+          "paddingLeft": 12,
+          "paddingRight": 12,
+          "paddingTop": 12,
+          "width": "100%",
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#fff",
+            "fontFamily": "Poppins-Bold",
+            "fontSize": 16,
+            "textAlign": "center",
+          }
+        }
+      >
+        Comprar
+      </Text>
+    </View>
+  </View>
+</RNCSafeAreaView>
+`;

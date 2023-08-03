@@ -4,7 +4,6 @@ module.exports = {
   testMatch: ['**/?(*.)+(spec|test).[jt]s?(x)'],
   testPathIgnorePatterns: [
     './node_modules',
-    './example',
     './lib/',
     '<rootDir>/__tests__/jest.setup.ts',
     '<rootDir>/__tests__/test-utils.test.tsx'
