@@ -45,7 +45,7 @@ const listHeaderComponent = () => (
 );
 
 export const StyledContainer = styled(SafeAreaView).attrs({
-  edges: ['right', 'bottom', 'left']
+  edges: ['right', 'left']
 })`
   flex: 1;
   background-color: ${({ theme: { colors } }) => colors.background};
