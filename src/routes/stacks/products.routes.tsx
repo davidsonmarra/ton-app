@@ -1,7 +1,6 @@
 import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { ProductsListScreen } from '../screens/products-list-screen';
-import { ProductDetailsScreen } from '../screens/product-details-screen';
+import { ProductsListScreen, ProductDetailsScreen } from '../screens';
 import { ProductsStackParamList } from '../../@types';
 
 const { Navigator, Screen } = createNativeStackNavigator<ProductsStackParamList>();

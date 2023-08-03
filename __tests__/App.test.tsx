@@ -1,17 +1,19 @@
-/**
- * @format
- */
-
-import 'react-native';
-import React from 'react';
 import App from '../App';
+import { productDetailsApi } from '../src/helpers';
+import { matchSnapshotWithProviders, act } from './test-utils';
 
-// Note: import explicitly to use the types shiped with jest.
-import {it} from '@jest/globals';
+jest.mock('../.storybook');
 
-// Note: test renderer must be required after react-native.
-import renderer from 'react-test-renderer';
+const fetch: any = async () => ({
+  json: async () => productDetailsApi[0]
+});
 
-it('renders correctly', () => {
-  renderer.create(<App />);
+global.fetch = fetch;
+
+describe('App', () => {
+  it('should match a snapshot', async () => {
+    await act(() => {
+      matchSnapshotWithProviders(<App />);
+    });
+  });
 });

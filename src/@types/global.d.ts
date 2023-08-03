@@ -1,2 +1,3 @@
 declare const RUN_STORYBOOK: boolean;
-declare const window: any;
+declare let window: any;
+declare let self: any;

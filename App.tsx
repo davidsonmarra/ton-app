@@ -10,30 +10,17 @@ import { StatusBar } from 'react-native';
 import './environments';
 import { ThemeProvider } from 'styled-components/native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
-import { createServer } from 'miragejs';
 
 import StorybookUIRoot from './.storybook';
 import { theme } from './src/global/styles';
-import { productDetailsApi, productsApi } from './src/helpers';
 import { Routes } from './src/routes';
+import { makeServer } from './src/server';
 
 if (window.server) {
   window.server.shutdown();
 }
 
-window.server = createServer({
-  routes() {
-    this.get('/api/products', () => {
-      return {
-        products: productsApi
-      };
-    });
-    this.get('/api/products/:id', (_, request) => {
-      const id: string = request.params.id;
-      return productDetailsApi.find(product => product.id === Number(id)) || {};
-    });
-  }
-});
+makeServer();
 
 const App = () => {
   return (

@@ -1,12 +1,12 @@
 import React, { useCallback, useLayoutEffect, useState } from 'react';
-import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { ProductsList } from '../../presentational';
 import { ProductDTO, ProductsStackParamList } from '../../@types';
+import { NavigationProp, useNavigation } from '@react-navigation/native';
 
-type ProductsListScreenProps = NativeStackScreenProps<ProductsStackParamList, 'ProductsListScreen'>;
-
-export const ProductsListScreen = ({ navigation: { navigate } }: ProductsListScreenProps) => {
+export const ProductsListScreen = () => {
   const [products, setProducts] = useState<ProductDTO[]>([]);
+  const { navigate } =
+    useNavigation<NavigationProp<ProductsStackParamList, 'ProductsListScreen'>>();
 
   const getProducts = useCallback(async () => {
     const response = await fetch('api/products');

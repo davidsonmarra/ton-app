@@ -54,7 +54,7 @@ export const ProductDetails = ({
     ) : (
       <>
         <Header title='' leftIcon='arrow-back' handlePressLeftIcon={handlePressLeftIcon} />
-        <StyledLoading size='large' />
+        <StyledLoading testID='loading-indicator' size='large' />
       </>
     )}
   </StyledContainer>
