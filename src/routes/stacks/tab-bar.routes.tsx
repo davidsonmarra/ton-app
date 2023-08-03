@@ -32,7 +32,7 @@ export const TabBarRoutes = () => {
         options={{
           tabBarIcon: ({ color, size }) => (
             <StyledIconContainer color={color}>
-              <Icon name='circle' color={color} size={size} />
+              <Icon name='home-filled' color={color} size={size} />
             </StyledIconContainer>
           )
         }}
@@ -43,7 +43,7 @@ export const TabBarRoutes = () => {
         options={{
           tabBarIcon: ({ color, size }) => (
             <StyledIconContainer color={color}>
-              <Icon name='circle' color={color} size={size} />
+              <Icon name='shopping-cart' color={color} size={size} />
             </StyledIconContainer>
           )
         }}
@@ -54,7 +54,7 @@ export const TabBarRoutes = () => {
         options={{
           tabBarIcon: ({ color, size }) => (
             <StyledIconContainer color={color}>
-              <Icon name='circle' color={color} size={size} />
+              <Icon name='person' color={color} size={size} />
             </StyledIconContainer>
           )
         }}
@@ -65,7 +65,7 @@ export const TabBarRoutes = () => {
         options={{
           tabBarIcon: ({ color, size }) => (
             <StyledIconContainer color={color}>
-              <Icon name='circle' color={color} size={size} />
+              <Icon name='list' color={color} size={size} />
             </StyledIconContainer>
           )
         }}
