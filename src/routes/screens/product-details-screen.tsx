@@ -8,10 +8,13 @@ type ProductDetailsScreenProps = NativeStackScreenProps<
   'ProductDetailsScreen'
 >;
 
-export const ProductDetailsScreen = ({ navigation, route }: ProductDetailsScreenProps) => {
+export const ProductDetailsScreen = ({
+  navigation: { goBack },
+  route: { params }
+}: ProductDetailsScreenProps) => {
   const [product, setProduct] = useState({} as ProductDetailsDTO);
   const [isLoading, setIsLoading] = useState(true);
-  const { id } = route.params;
+  const { id } = params;
 
   const getProduct = useCallback(async () => {
     const response = await fetch('api/products/' + id);
@@ -21,7 +24,7 @@ export const ProductDetailsScreen = ({ navigation, route }: ProductDetailsScreen
   }, [product]);
 
   const handlePressLeftIcon = useCallback(() => {
-    navigation.goBack();
+    goBack();
   }, []);
 
   useLayoutEffect(() => {

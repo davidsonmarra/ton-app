@@ -1,37 +1,22 @@
-import React, { useCallback, useLayoutEffect, useState } from 'react';
+import React, { useCallback } from 'react';
 import { FlatList, FlatListProps } from 'react-native';
 import styled from 'styled-components/native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { useNavigation, NavigationProp } from '@react-navigation/native';
-
-import { ProductDTO, ProductsStackParamList } from '../@types';
+import { ProductDTO } from '../@types';
 import { Header, ProductCard } from '../components';
 
-export const ProductsList = () => {
-  const [products, setProducts] = useState([]);
-  const { navigate } =
-    useNavigation<NavigationProp<ProductsStackParamList, 'ProductsListScreen'>>();
+interface ProductsListProps {
+  products: ProductDTO[];
+  handlePressProduct: (id: number) => void;
+}
 
-  const getProducts = useCallback(async () => {
-    const response = await fetch('api/products');
-    const data = await response.json();
-    setProducts(data.products);
-  }, []);
-
-  const handlePressProduct = useCallback((id: number) => {
-    navigate('ProductDetailsScreen', { id });
-  }, []);
-
+export const ProductsList = ({ products = [], handlePressProduct }: ProductsListProps) => {
   const renderItem = useCallback(
     ({ item }: { item: ProductDTO }) => (
       <ProductCard item={item} handlePressProduct={handlePressProduct} />
     ),
     []
   );
-
-  useLayoutEffect(() => {
-    getProducts();
-  }, []);
 
   return (
     <StyledContainer>

@@ -16,51 +16,49 @@ export const ProductDetails = ({
   isLoadingApi,
   item,
   handlePressLeftIcon
-}: ProductDetailsProps) => {
-  return (
-    <StyledContainer>
-      {!isLoadingApi ? (
-        <>
-          <Header
-            title={`${item.title}  ${item.subTitle}`}
-            leftIcon='arrow-back'
-            handlePressLeftIcon={handlePressLeftIcon}
-          />
-          <StyledContent>
-            <TitleProductDetails title={item.title} subTitle={item.subTitle} />
-            <StyledSection />
-            <ImageDetails images={item.images} />
-            <StyledSection>
-              {item.benefits.map((benefit, index) => (
-                <BenefitItemDetails
-                  key={index}
-                  icon={benefit.icon}
-                  description={benefit.description}
-                />
-              ))}
-              <StyledPriceDetailsContainer>
-                <PriceDetails
-                  currentPrice={item.currentPrice}
-                  oldPrice={item.oldPrice}
-                  installmentsValue={item.installmentsValue}
-                  installmentsValueCents={item.installmentsValueCents}
-                />
-              </StyledPriceDetailsContainer>
-            </StyledSection>
-          </StyledContent>
-          <StyledButtonContainer>
-            <Button label='Comprar' />
-          </StyledButtonContainer>
-        </>
-      ) : (
-        <>
-          <Header title='' leftIcon='arrow-back' handlePressLeftIcon={handlePressLeftIcon} />
-          <StyledLoading size='large' />
-        </>
-      )}
-    </StyledContainer>
-  );
-};
+}: ProductDetailsProps) => (
+  <StyledContainer>
+    {!isLoadingApi ? (
+      <>
+        <Header
+          title={`${item.title}  ${item.subTitle}`}
+          leftIcon='arrow-back'
+          handlePressLeftIcon={handlePressLeftIcon}
+        />
+        <StyledContent>
+          <TitleProductDetails title={item.title} subTitle={item.subTitle} />
+          <StyledSection />
+          <ImageDetails images={item.images} />
+          <StyledSection>
+            {item.benefits.map((benefit, index) => (
+              <BenefitItemDetails
+                key={index}
+                icon={benefit.icon}
+                description={benefit.description}
+              />
+            ))}
+            <StyledPriceDetailsContainer>
+              <PriceDetails
+                currentPrice={item.currentPrice}
+                oldPrice={item.oldPrice}
+                installmentsValue={item.installmentsValue}
+                installmentsValueCents={item.installmentsValueCents}
+              />
+            </StyledPriceDetailsContainer>
+          </StyledSection>
+        </StyledContent>
+        <StyledButtonContainer>
+          <Button label='Comprar' />
+        </StyledButtonContainer>
+      </>
+    ) : (
+      <>
+        <Header title='' leftIcon='arrow-back' handlePressLeftIcon={handlePressLeftIcon} />
+        <StyledLoading size='large' />
+      </>
+    )}
+  </StyledContainer>
+);
 
 const StyledContainer = styled(SafeAreaView).attrs({
   edges: ['right', 'bottom', 'left']
