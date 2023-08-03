@@ -777,7 +777,7 @@ exports[`ProductDetails should match a snapshot 1`] = `
     style={
       {
         "backgroundColor": "#efefef",
-        "bottom": 0,
+        "bottom": "px",
         "paddingBottom": 12,
         "paddingLeft": 24,
         "paddingRight": 24,

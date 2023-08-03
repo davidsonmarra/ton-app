@@ -5,6 +5,7 @@ import styled, { useTheme } from 'styled-components/native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { ExampleScreen } from '../screens/example-screen';
+import { getFocusedRouteNameFromRoute } from '@react-navigation/native';
 const { Navigator, Screen } = createBottomTabNavigator();
 
 export const TabBarRoutes = () => {
@@ -40,13 +41,20 @@ export const TabBarRoutes = () => {
       <Screen
         name='ProductsStack'
         component={ProductsStack}
-        options={{
+        options={({ route }) => ({
           tabBarIcon: ({ color, size }) => (
             <StyledIconContainer color={color}>
               <Icon name='shopping-cart' color={color} size={size} />
             </StyledIconContainer>
-          )
-        }}
+          ),
+          tabBarStyle: (route => {
+            const routeName = getFocusedRouteNameFromRoute(route) ?? '';
+            if (routeName === 'ProductDetailsScreen') {
+              return { display: 'none' };
+            }
+            return { height: 64, backgroundColor: colors.background };
+          })(route)
+        })}
       />
       <Screen
         name='ScreenExample2'
