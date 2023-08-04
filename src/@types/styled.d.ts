@@ -16,6 +16,12 @@ declare module 'styled-components/native' {
         semiBold: string;
         bold: string;
       };
+      secondary: {
+        bold: string;
+      };
+      tertiary: {
+        regular: string;
+      }
     };
     fontSizes: {
       sm: string;

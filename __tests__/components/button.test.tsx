@@ -8,7 +8,7 @@ const props = (label = 'Label', onPress = mockOnPress) => ({
   onPress
 });
 
-describe('ImageDetails', () => {
+describe('Button', () => {
   it('should match a snapshot', () => {
     matchSnapshotWithProviders(<Button {...props()} />);
   });

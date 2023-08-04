@@ -2,6 +2,14 @@
   "migIndex": 1,
   "data": [
     {
+      "path": "assets/fonts/Chevin-Extrabold.otf",
+      "sha1": "13c4d3eaba292c493103fddc24e5eb32127d4df5"
+    },
+    {
+      "path": "assets/fonts/Kozuka-Gothic-Pr6n-L.otf",
+      "sha1": "dc329e281f66882c04cd52e95165d79eb86fe934"
+    },
+    {
       "path": "assets/fonts/Poppins-Black.ttf",
       "sha1": "645e04c53c6b5b35bce654a811ebce16af8aa721"
     },

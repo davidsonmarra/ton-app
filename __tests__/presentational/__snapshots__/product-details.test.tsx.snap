@@ -163,11 +163,14 @@ exports[`ProductDetails should match a snapshot 1`] = `
         }
       >
         <Text
+          bottomPadding={32}
           style={
             {
               "color": "#1e1e1e",
-              "fontFamily": "Poppins-Bold",
-              "fontSize": 24,
+              "fontFamily": "Chevin-Extrabold",
+              "fontSize": 32,
+              "height": 32,
+              "lineHeight": 32,
             }
           }
         >
@@ -177,8 +180,10 @@ exports[`ProductDetails should match a snapshot 1`] = `
           style={
             {
               "color": "#1e1e1e",
-              "fontFamily": "Poppins-Medium",
-              "fontSize": 24,
+              "fontFamily": "Kozuka-Gothic-Pr6n-L",
+              "fontSize": 32,
+              "height": 32,
+              "lineHeight": 32,
             }
           }
         >

@@ -15,6 +15,7 @@
 		165662D65AA441C5AC09A97E /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 07A94634AE884513BDCE0855 /* Poppins-Light.ttf */; };
 		1C3E61582BBC4753BFC3EF28 /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C03124357FCC4C8BAC38CD65 /* Poppins-Black.ttf */; };
 		243F571BC44645DD99537740 /* Poppins-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8E8DBFA5F0447F3B43B4B42 /* Poppins-BoldItalic.ttf */; };
+		2BDFDD35077247CF8CCA9E87 /* Kozuka-Gothic-Pr6n-L.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE7E9837C201464F8664A6CB /* Kozuka-Gothic-Pr6n-L.otf */; };
 		51E357E8A9B84DF6B44A41FB /* Poppins-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 555F188595F54BE49B370CEC /* Poppins-SemiBoldItalic.ttf */; };
 		5243B4F8C2934E12A1D0F785 /* Poppins-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DFC25A1C971849E891A86F9F /* Poppins-BlackItalic.ttf */; };
 		6CD6D7F32A795B6000F22D83 /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6CD6D7E02A795B6000F22D83 /* Fontisto.ttf */; };
@@ -44,6 +45,7 @@
 		871CC8C801A046EE93A05440 /* Poppins-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57D574DAD40A492F87603098 /* Poppins-LightItalic.ttf */; };
 		AB0CB41660EB41CD9D194884 /* Poppins-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 094F1A8FF43543518255DC13 /* Poppins-MediumItalic.ttf */; };
 		AC81AE3A07474CDBB58A4BC4 /* Poppins-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC4744AEB06549B0B1E6925F /* Poppins-ExtraLightItalic.ttf */; };
+		ADC9DF05BE974D6DA171595F /* Chevin-Extrabold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A847A4418B754959BAA2A78A /* Chevin-Extrabold.otf */; };
 		ADCFCD20AF8A48AF9A5A5869 /* Poppins-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 45D67CFC49C8475E8BF642D4 /* Poppins-Italic.ttf */; };
 		C1F83C21A7164DA6BA87416B /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FCCA03063C8649ECBBFB4866 /* Poppins-Bold.ttf */; };
 		C2931C1BF8F94B2681829674 /* Poppins-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84E19285AD114C56855AA049 /* Poppins-ThinItalic.ttf */; };
@@ -109,9 +111,11 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Ton/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84E19285AD114C56855AA049 /* Poppins-ThinItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-ThinItalic.ttf"; path = "../assets/fonts/Poppins-ThinItalic.ttf"; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-Ton-TonTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ton-TonTests.release.xcconfig"; path = "Target Support Files/Pods-Ton-TonTests/Pods-Ton-TonTests.release.xcconfig"; sourceTree = "<group>"; };
+		A847A4418B754959BAA2A78A /* Chevin-Extrabold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Chevin-Extrabold.otf"; path = "../assets/fonts/Chevin-Extrabold.otf"; sourceTree = "<group>"; };
 		B2C59A2AE6BF4592B1ABF9E2 /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-ExtraLight.ttf"; path = "../assets/fonts/Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
 		BE87275BAF414F6DA18DCC77 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-SemiBold.ttf"; path = "../assets/fonts/Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
 		C03124357FCC4C8BAC38CD65 /* Poppins-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Black.ttf"; path = "../assets/fonts/Poppins-Black.ttf"; sourceTree = "<group>"; };
+		CE7E9837C201464F8664A6CB /* Kozuka-Gothic-Pr6n-L.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Kozuka-Gothic-Pr6n-L.otf"; path = "../assets/fonts/Kozuka-Gothic-Pr6n-L.otf"; sourceTree = "<group>"; };
 		D0E99D6BE6444580AE1CA4DB /* Poppins-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-ExtraBold.ttf"; path = "../assets/fonts/Poppins-ExtraBold.ttf"; sourceTree = "<group>"; };
 		D8E8DBFA5F0447F3B43B4B42 /* Poppins-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-BoldItalic.ttf"; path = "../assets/fonts/Poppins-BoldItalic.ttf"; sourceTree = "<group>"; };
 		DFC25A1C971849E891A86F9F /* Poppins-BlackItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-BlackItalic.ttf"; path = "../assets/fonts/Poppins-BlackItalic.ttf"; sourceTree = "<group>"; };
@@ -202,6 +206,8 @@
 				555F188595F54BE49B370CEC /* Poppins-SemiBoldItalic.ttf */,
 				52B26EA84A1242CF8F9B3523 /* Poppins-Thin.ttf */,
 				84E19285AD114C56855AA049 /* Poppins-ThinItalic.ttf */,
+				A847A4418B754959BAA2A78A /* Chevin-Extrabold.otf */,
+				CE7E9837C201464F8664A6CB /* Kozuka-Gothic-Pr6n-L.otf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -409,6 +415,8 @@
 				6CD6D8002A795B6000F22D83 /* Zocial.ttf in Resources */,
 				6CD6D8022A795B6000F22D83 /* FontAwesome6_Solid.ttf in Resources */,
 				C2931C1BF8F94B2681829674 /* Poppins-ThinItalic.ttf in Resources */,
+				ADC9DF05BE974D6DA171595F /* Chevin-Extrabold.otf in Resources */,
+				2BDFDD35077247CF8CCA9E87 /* Kozuka-Gothic-Pr6n-L.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

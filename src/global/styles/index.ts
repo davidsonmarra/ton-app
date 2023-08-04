@@ -14,6 +14,12 @@ export const theme: DefaultTheme = {
       medium: 'Poppins-Medium',
       semiBold: 'Poppins-SemiBold',
       bold: 'Poppins-Bold'
+    },
+    secondary: {
+      bold: 'Chevin-Extrabold',
+    },
+    tertiary: {
+      regular: 'Kozuka-Gothic-Pr6n-L',
     }
   },
   fontSizes: {

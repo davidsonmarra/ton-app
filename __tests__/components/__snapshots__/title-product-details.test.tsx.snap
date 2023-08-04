@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ImageDetails should match a snapshot 1`] = `
+<View
+  style={
+    {
+      "flexDirection": "row",
+      "justifyContent": "center",
+    }
+  }
+>
+  <Text
+    bottomPadding={36}
+    style={
+      {
+        "color": "#1e1e1e",
+        "fontFamily": "Chevin-Extrabold",
+        "fontSize": 32,
+        "height": 36,
+        "lineHeight": 36,
+      }
+    }
+  >
+    title
+  </Text>
+  <Text
+    style={
+      {
+        "color": "#1e1e1e",
+        "fontFamily": "Kozuka-Gothic-Pr6n-L",
+        "fontSize": 32,
+        "height": 32,
+        "lineHeight": 32,
+      }
+    }
+  >
+     
+    subTitle
+  </Text>
+</View>
+`;
