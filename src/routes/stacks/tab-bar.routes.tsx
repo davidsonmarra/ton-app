@@ -52,7 +52,12 @@ export const TabBarRoutes = () => {
             if (routeName === 'ProductDetailsScreen') {
               return { display: 'none' };
             }
-            return { height: 64, backgroundColor: colors.background };
+            return {
+              height: 64 + bottom,
+              paddingBottom: 4,
+              paddingTop: 4,
+              backgroundColor: colors.background
+            };
           })(route)
         })}
       />
