@@ -110,15 +110,29 @@ Studio e Xcode, respectivamente.
 <h2 id="resultado">📱 Resultado</h2>
 <div align="center">
 
+
+https://github.com/davidsonmarra/ton-app/assets/80720221/b812c2d7-7c2a-4b8d-bbbc-0c371a022a9e
+
+
 </div>
 
 <h2 id='doc'>📖 Documentação</h2>
 <div align="center">
 
+
+https://github.com/davidsonmarra/ton-app/assets/80720221/4e5937bd-fc99-42e4-a375-b4a6ffd510f0
+
+
 </div>
 
 <h2 id='tests'>⚙️ Cobertura de Testes<h2>
 <div align="center">
+
+
+https://github.com/davidsonmarra/ton-app/assets/80720221/03164c88-6ca7-48f9-b096-76f817a8ab6e
+
+
+![tests-2](https://github.com/davidsonmarra/ton-app/assets/80720221/c6e60726-a9b6-4db3-a54b-41cbb0b709ca)
 
 </div>
 
