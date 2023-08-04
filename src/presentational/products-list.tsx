@@ -3,14 +3,21 @@ import { FlatList, FlatListProps } from 'react-native';
 import styled from 'styled-components/native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { ProductDTO } from '../@types';
-import { Header, ProductCard } from '../components';
+import { BottomModal, Header, ProductCard } from '../components';
 
 interface ProductsListProps {
   products: ProductDTO[];
   handlePressProduct: (id: number) => void;
+  infoModalIsVisible: boolean;
+  toogleModal: () => void;
 }
 
-export const ProductsList = ({ products, handlePressProduct }: ProductsListProps) => {
+export const ProductsList = ({
+  products,
+  handlePressProduct,
+  infoModalIsVisible,
+  toogleModal
+}: ProductsListProps) => {
   const renderItem = useCallback(
     ({ item }: { item: ProductDTO }) => (
       <ProductCard item={item} handlePressProduct={handlePressProduct} />
@@ -20,7 +27,7 @@ export const ProductsList = ({ products, handlePressProduct }: ProductsListProps
 
   return (
     <StyledContainer>
-      <Header title='Maquininhas' />
+      <Header title='Maquininhas' rightIcon='info-outline' handlePressRightIcon={toogleModal} />
       <StyledContent>
         <StyledList
           data={products}
@@ -33,6 +40,10 @@ export const ProductsList = ({ products, handlePressProduct }: ProductsListProps
           testID='products-list'
         />
       </StyledContent>
+      <BottomModal visible={infoModalIsVisible} title="Créditos" onRequestClose={toogleModal}>
+        <StyledModalTitle>Este projeto foi desenvolvido com 💚,</StyledModalTitle>
+        <StyledModalDescription>Por Davidson Marra</StyledModalDescription>
+      </BottomModal>
     </StyledContainer>
   );
 };
@@ -80,4 +91,16 @@ const StyledList = styled(
 
 const StyledSeparator = styled.View`
   height: 16px;
+`;
+
+const StyledModalTitle = styled.Text`
+  font-family: ${({ theme: { fonts } }) => fonts.primary.medium};
+  font-size: ${({ theme: { fontSizes } }) => fontSizes.lg};
+  color: ${({ theme: { colors } }) => colors.text};
+`;
+
+const StyledModalDescription = styled.Text`
+  font-family: ${({ theme: { fonts } }) => fonts.primary.regular};
+  font-size: ${({ theme: { fontSizes } }) => fontSizes.lg};
+  color: ${({ theme: { colors } }) => colors.text};
 `;

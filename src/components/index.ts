@@ -1,4 +1,5 @@
 export { Button } from './button';
+export { BottomModal } from './bottom-modal';
 export { BenefitItemDetails } from './benefit-item-details';
 export { Header } from './header';
 export { ImageCardSelect } from './image-card-select';

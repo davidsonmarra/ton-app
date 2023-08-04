@@ -6,6 +6,7 @@ import { api } from '../../global/services';
 
 export const ProductsListScreen = () => {
   const [products, setProducts] = useState<ProductDTO[]>([]);
+  const [infoModalIsVisible, setInfoModalIsVisible] = useState(false);
   const { navigate } =
     useNavigation<NavigationProp<ProductsStackParamList, 'ProductsListScreen'>>();
 
@@ -22,9 +23,13 @@ export const ProductsListScreen = () => {
     navigate('ProductDetailsScreen', { id });
   }, []);
 
+  const toogleModal = useCallback(() => {
+    setInfoModalIsVisible(!infoModalIsVisible);
+  }, [infoModalIsVisible]);
+
   useLayoutEffect(() => {
     getProducts();
   }, []);
 
-  return <ProductsList products={products} handlePressProduct={handlePressProduct} />;
+  return <ProductsList products={products} handlePressProduct={handlePressProduct} infoModalIsVisible={infoModalIsVisible} toogleModal={toogleModal} />;
 };

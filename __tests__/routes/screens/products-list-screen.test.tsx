@@ -68,4 +68,15 @@ describe('ProductListScreen', () => {
       expect(consoleSpy).toHaveBeenCalledTimes(1);
     });
   });
+
+  it('should open modal when click on info button', async () => {
+    await waitFor(async () => {
+      const { getByTestId } = render(<ProductsListScreen />);
+      const infoButton = getByTestId('header-button-right');
+      const modal = getByTestId('bottom-modal');
+      expect(modal.props.visible).toBeFalsy();
+      fireEvent.press(infoButton);
+      expect(modal.props.visible).toBeTruthy();
+    });
+  });
 });
