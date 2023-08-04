@@ -41,7 +41,7 @@ export const ProductsList = ({
         />
       </StyledContent>
       <BottomModal visible={infoModalIsVisible} title="Créditos" onRequestClose={toogleModal}>
-        <StyledModalTitle>Este projeto foi desenvolvido com 💚,</StyledModalTitle>
+        <StyledModalTitle>Desenvolvido com 💚,</StyledModalTitle>
         <StyledModalDescription>Por Davidson Marra</StyledModalDescription>
       </BottomModal>
     </StyledContainer>
