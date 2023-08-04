@@ -14,10 +14,14 @@ export function makeServer({ environment = 'development' } = {}) {
           products: productsApi
         };
       });
-      this.get('products/:id', (_, request) => {
-        const id: string = request.params.id;
-        return productDetailsApi.find(product => product.id === Number(id)) || {};
-      });
+      this.get(
+        'products/:id',
+        (_, request) => {
+          const id: string = request.params.id;
+          return productDetailsApi.find(product => product.id === Number(id)) || {};
+        },
+        { timing: 4000 }
+      );
     }
   });
   return server;

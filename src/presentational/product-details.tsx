@@ -2,7 +2,13 @@ import React from 'react';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import styled from 'styled-components/native';
 import { ProductDetailsDTO } from '../@types';
-import { Header, ImageDetails, PriceDetails, TitleProductDetails } from '../components';
+import {
+  Header,
+  ImageDetails,
+  PriceDetails,
+  ProductDetailsScreenSkeleton,
+  TitleProductDetails
+} from '../components';
 import { BenefitItemDetails } from '../components';
 import { Button } from '../components';
 
@@ -49,16 +55,18 @@ export const ProductDetails = ({
             </StyledPriceDetailsContainer>
           </StyledSection>
         </StyledContent>
-        <StyledButtonContainer bottomInset={bottomInset}>
-          <Button label='Comprar' />
-        </StyledButtonContainer>
       </>
     ) : (
       <>
         <Header title='' leftIcon='arrow-back' handlePressLeftIcon={handlePressLeftIcon} />
-        <StyledLoading testID='loading-indicator' size='large' />
+        <StyledContent>
+          <ProductDetailsScreenSkeleton />
+        </StyledContent>
       </>
     )}
+    <StyledButtonContainer bottomInset={bottomInset}>
+      <Button label='Comprar' />
+    </StyledButtonContainer>
   </StyledContainer>
 );
 
@@ -91,14 +99,5 @@ const StyledButtonContainer = styled.View<{ bottomInset: number }>`
   position: absolute;
   bottom: ${({ bottomInset }) => bottomInset}px;
   padding: 0 24px 12px;
-  background-color: ${({ theme: { colors } }) => colors.background};
-`;
-
-const StyledLoading = styled.ActivityIndicator.attrs(({ theme: { colors } }) => ({
-  color: colors.primary
-}))`
-  flex: 1;
-  justify-content: center;
-  align-items: center;
   background-color: ${({ theme: { colors } }) => colors.background};
 `;

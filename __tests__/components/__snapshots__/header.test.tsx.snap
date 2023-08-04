@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ImageCardSelect should match a snapshot 1`] = `
+exports[`Header should match a snapshot 1`] = `
 <View
   style={
     {
@@ -61,9 +61,7 @@ exports[`ImageCardSelect should match a snapshot 1`] = `
         "textAlign": "center",
       }
     }
-  >
-    title
-  </Text>
+  />
   <View
     accessibilityState={
       {

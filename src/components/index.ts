@@ -6,4 +6,5 @@ export { ImageCardSelect } from './image-card-select';
 export { ImageDetails } from './image-details';
 export { PriceDetails } from './price-details';
 export { ProductCard } from './product-card';
+export { ProductDetailsScreenSkeleton } from './product-details-screen-skeleton';
 export { TitleProductDetails } from './title-product-details';

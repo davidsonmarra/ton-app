@@ -5,7 +5,7 @@ const mockHandlePressLeftIcon = jest.fn();
 const mockHandlePressRightIcon = jest.fn();
 
 const props = (
-  title = 'title',
+  title?: string,
   leftIcon = '',
   rightIcon = '',
   handlePressLeftIcon = mockHandlePressLeftIcon,
@@ -18,7 +18,7 @@ const props = (
   handlePressRightIcon
 });
 
-describe('ImageCardSelect', () => {
+describe('Header', () => {
   beforeEach(() => {
     jest.clearAllMocks();
   });

@@ -18,7 +18,7 @@ export const BottomModal = ({ children, title, ...rest }: BottomModalProps) => {
       <StyledContainer onPress={rest.onRequestClose}>
         <StyledContent bottomInset={bottom}>
           <StyledTitleContainer>
-            <View />
+            <View style={{ width: 32 }} />
             <StyledTitle>{title}</StyledTitle>
             <StyledIconButton onPress={rest.onRequestClose}>
               <Icon name='close' size={32} color={colors.text} />
@@ -51,6 +51,8 @@ const StyledContent = styled.View<{ bottomInset: number }>`
   justify-content: center;
   align-items: center;
   background-color: ${({ theme: { colors } }) => colors.background};
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
 `;
 
 const StyledTitleContainer = styled.View`

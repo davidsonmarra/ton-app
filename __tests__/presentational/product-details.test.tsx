@@ -14,18 +14,6 @@ describe('ProductDetails', () => {
     );
   });
 
-  it('should render a loading indicator', () => {
-    const { getByTestId } = render(
-      <ProductDetails
-        isLoadingApi={true}
-        item={productDetailsApi[0]}
-        handlePressLeftIcon={jest.fn}
-        bottomInset={0}
-      />
-    );
-    expect(getByTestId('loading-indicator')).toBeTruthy();
-  });
-
   it('should render a product details', () => {
     const { getByText } = render(
       <ProductDetails

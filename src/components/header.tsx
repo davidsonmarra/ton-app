@@ -4,7 +4,7 @@ import styled, { useTheme } from 'styled-components/native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
 interface HeaderProps {
-  title: string;
+  title?: string;
   leftIcon?: string;
   rightIcon?: string;
   handlePressLeftIcon?: () => void;
@@ -12,7 +12,7 @@ interface HeaderProps {
 }
 
 export const Header = ({
-  title,
+  title = '',
   leftIcon,
   rightIcon,
   handlePressLeftIcon,
