@@ -114,11 +114,18 @@ Studio e Xcode, respectivamente.
 <h2 id="resultado">📱 Resultado</h2>
 <div align="center">
 
-https://github.com/davidsonmarra/ton-app/assets/80720221/b812c2d7-7c2a-4b8d-bbbc-0c371a022a9e
+
+https://github.com/davidsonmarra/ton-app/assets/80720221/9b8e8fe9-bfa2-42e8-905b-ad9b0fea2509
+
 
 </div>
 
 <h2 id='doc'>📖 Documentação</h2>
+<p>
+  
+  Toda a documentação foi desenvolvida com o Storybook. Para rodar, basta alterar a propriedade `RUN_STORYBOOK` no arquivo `env.json` com o app rodando.
+  
+</p>
 <div align="center">
 
 https://github.com/davidsonmarra/ton-app/assets/80720221/4e5937bd-fc99-42e4-a375-b4a6ffd510f0
