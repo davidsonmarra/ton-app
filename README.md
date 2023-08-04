@@ -80,12 +80,13 @@ Studio e Xcode, respectivamente.
     ├── __tests__ # Arquivos de teste
     ├── __mocks__ # Arquivos de mock (api, tests, etc)
     ├── assets # Fontes e assets do README.md
-    ├── src # Fontes e assets do README.md
+    ├── src # Código fontes JavaScript
     │   └── @types # Definições dos tipos usados no projeto
     │   └── components # Componentes genériicos da aplicação
     │   └── global # Configurações globais
     |       └── services # Configurações da api
     |       └── styles # Configurações de estilo
+    │   └── helpers # Pasta com úteis/constantes globais (validações, máscaras, etc)
     │   └── presentational # Apenas a parte visual dos componentes (screens)
     │   └── routes # Toda a configuração da rota
     |       └── screens # As telas/páginas (parte lógica)
@@ -105,7 +106,9 @@ Studio e Xcode, respectivamente.
   <li>Husky: ferramenta para configurar hooks do Git.</li>
   <li>Jest e React Native Testing Library: para a criação de testes unitários.</li>
   <li>Storybook: para a documentação dos principais componentes do projeto.</li>
+  <li>Axios: para a realização da integração com as APIs.</li>
   <li>Mirage JS: para simular uma api para retornas as informações das maquininhas.</li>
+  <li>React Native Skeleton Placeholder: usada na criação loading no formato skeleton.</li>
 </ul>
 
 <h2 id="resultado">📱 Resultado</h2>
