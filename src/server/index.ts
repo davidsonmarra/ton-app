@@ -1,5 +1,6 @@
 import { Server, Model } from 'miragejs';
 import { productsApi, productDetailsApi } from '../../__mocks__';
+import { BASE_URL } from '../helpers';
 
 export function makeServer({ environment = 'development' } = {}) {
   const server = new Server({
@@ -8,7 +9,7 @@ export function makeServer({ environment = 'development' } = {}) {
       product: Model
     },
     routes() {
-      this.urlPrefix = 'https://api.ton/v1/';
+      this.urlPrefix = BASE_URL;
       this.get('products', () => {
         return {
           products: productsApi
