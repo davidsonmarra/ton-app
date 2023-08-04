@@ -1,5 +1,5 @@
 import { Server, Model } from 'miragejs';
-import { productsApi, productDetailsApi } from '../helpers';
+import { productsApi, productDetailsApi } from '../../__mocks__';
 
 export function makeServer({ environment = 'development' } = {}) {
   const server = new Server({

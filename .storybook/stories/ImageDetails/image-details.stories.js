@@ -2,7 +2,7 @@ import React from 'react';
 import { View } from 'react-native';
 import { ThemeProvider } from 'styled-components/native';
 import { ImageDetails } from '../../../src/components';
-import { productDetailsApi } from '../../../src/helpers';
+import { productDetailsApi } from '../../../__mocks__';
 import { theme } from '../../../src/global/styles';
 import { NavigationContainer } from '@react-navigation/native';
 

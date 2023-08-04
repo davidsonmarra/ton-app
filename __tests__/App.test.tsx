@@ -1,5 +1,5 @@
 import App from '../App';
-import { productDetailsApi } from '../src/helpers';
+import { productDetailsApi } from '../__mocks__';
 import { matchSnapshotWithProviders, act } from './test-utils';
 
 jest.mock('../.storybook');

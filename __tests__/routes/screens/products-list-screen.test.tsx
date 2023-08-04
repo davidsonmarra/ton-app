@@ -1,4 +1,4 @@
-import { productsApi } from '../../../src/helpers';
+import { productsApi } from '../../../__mocks__';
 import { ProductsListScreen } from '../../../src/routes/screens';
 import { matchSnapshotWithProviders, render, act, waitFor, fireEvent } from '../../test-utils';
 

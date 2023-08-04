@@ -3,7 +3,7 @@ import { View } from 'react-native';
 import { ThemeProvider } from 'styled-components/native';
 import { PriceDetails } from '../../../src/components';
 import { theme } from '../../../src/global/styles';
-import { productDetailsApi } from '../../../src/helpers';
+import { productDetailsApi } from '../../../__mocks__';
 
 const PriceDetailsMeta = {
   title: 'Price Details',

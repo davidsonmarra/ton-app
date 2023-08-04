@@ -1,4 +1,4 @@
-import { productDetailsApi } from '../../src/helpers';
+import { productDetailsApi } from '../../__mocks__';
 import { ProductDetails } from '../../src/presentational';
 import { matchSnapshotWithProviders, render } from '../test-utils';
 
@@ -9,6 +9,7 @@ describe('ProductDetails', () => {
         isLoadingApi={false}
         item={productDetailsApi[0]}
         handlePressLeftIcon={jest.fn}
+        bottomInset={0}
       />
     );
   });
@@ -19,6 +20,7 @@ describe('ProductDetails', () => {
         isLoadingApi={true}
         item={productDetailsApi[0]}
         handlePressLeftIcon={jest.fn}
+        bottomInset={0}
       />
     );
     expect(getByTestId('loading-indicator')).toBeTruthy();
@@ -30,6 +32,7 @@ describe('ProductDetails', () => {
         isLoadingApi={false}
         item={productDetailsApi[0]}
         handlePressLeftIcon={jest.fn}
+        bottomInset={0}
       />
     );
     expect(getByText(productDetailsApi[0].title)).toBeTruthy();
