@@ -32,7 +32,7 @@ export const ProductDetails = ({
           <StyledSection />
           <ImageDetails images={item.images} />
           <StyledSection>
-            {item.benefits.map((benefit, index) => (
+            {item.benefits?.map((benefit, index) => (
               <BenefitItemDetails
                 key={index}
                 icon={benefit.icon}

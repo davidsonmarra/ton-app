@@ -6,7 +6,7 @@ interface ImageDetailsProps {
   images: string[];
 }
 
-export const ImageDetails = ({ images }: ImageDetailsProps) => {
+export const ImageDetails = ({ images = [] }: ImageDetailsProps) => {
   const [img, setImg] = useState(images[0]);
   return (
     <>

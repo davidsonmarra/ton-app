@@ -10,7 +10,7 @@ interface ProductsListProps {
   handlePressProduct: (id: number) => void;
 }
 
-export const ProductsList = ({ products = [], handlePressProduct }: ProductsListProps) => {
+export const ProductsList = ({ products, handlePressProduct }: ProductsListProps) => {
   const renderItem = useCallback(
     ({ item }: { item: ProductDTO }) => (
       <ProductCard item={item} handlePressProduct={handlePressProduct} />

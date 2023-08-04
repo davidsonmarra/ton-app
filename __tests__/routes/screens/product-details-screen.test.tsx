@@ -2,10 +2,15 @@ import { productDetailsApi } from '../../../__mocks__';
 import { ProductDetailsScreen } from '../../../src/routes/screens';
 import { matchSnapshotWithProviders, render, act, waitFor, fireEvent } from '../../test-utils';
 
-const mockFetch: any = jest.fn(() => ({
-  json: async () => productDetailsApi[0]
+const mockFetch = jest.fn().mockResolvedValue({
+  data: productDetailsApi[0]
+});
+
+jest.mock('../../../src/global/services', () => ({
+  api: {
+    get: async () => mockFetch()
+  }
 }));
-global.fetch = mockFetch;
 
 const mockGoBack = jest.fn();
 jest.mock('@react-navigation/native', () => ({
@@ -23,7 +28,7 @@ jest.mock('@react-navigation/native', () => ({
 
 describe('ProductDetailsScreen', () => {
   beforeEach(() => {
-    mockFetch.mockClear();
+    jest.clearAllMocks();
   });
 
   it('should match a snapshot', async () => {
@@ -53,6 +58,15 @@ describe('ProductDetailsScreen', () => {
       const goBackButton = await findByTestId('header-left-button');
       expect(mockGoBack).toHaveBeenCalledTimes(0);
       fireEvent.press(goBackButton);
+      expect(mockGoBack).toHaveBeenCalledTimes(1);
+    });
+  });
+
+  it('should back to previous screen when api returns error', async () => {
+    mockFetch.mockRejectedValueOnce({ message: 'error' });
+
+    await waitFor(async () => {
+      render(<ProductDetailsScreen />);
       expect(mockGoBack).toHaveBeenCalledTimes(1);
     });
   });

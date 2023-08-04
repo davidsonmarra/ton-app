@@ -16,9 +16,6 @@ jest.mock('react-native-safe-area-context', () => mockSafeAreaContext);
 
 jest.mock('react-native/Libraries/Animated/NativeAnimatedHelper');
 
-global.self = global;
-global.fetch = jest.fn;
-
 jest.mock('../src/server');
 global.XMLHttpRequest = XMLHttpRequest;
 

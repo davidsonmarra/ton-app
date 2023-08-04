@@ -2,6 +2,7 @@ import React, { useCallback, useLayoutEffect, useState } from 'react';
 import { ProductsList } from '../../presentational';
 import { ProductDTO, ProductsStackParamList } from '../../@types';
 import { NavigationProp, useNavigation } from '@react-navigation/native';
+import { api } from '../../global/services';
 
 export const ProductsListScreen = () => {
   const [products, setProducts] = useState<ProductDTO[]>([]);
@@ -9,9 +10,12 @@ export const ProductsListScreen = () => {
     useNavigation<NavigationProp<ProductsStackParamList, 'ProductsListScreen'>>();
 
   const getProducts = useCallback(async () => {
-    const response = await fetch('api/products');
-    const data = await response.json();
-    setProducts(data.products);
+    try {
+      const { data } = await api.get('products');
+      setProducts(data.products);
+    } catch (error) {
+      console.log(error);
+    }
   }, []);
 
   const handlePressProduct = useCallback((id: number) => {

@@ -2,10 +2,15 @@ import { productsApi } from '../../../__mocks__';
 import { ProductsListScreen } from '../../../src/routes/screens';
 import { matchSnapshotWithProviders, render, act, waitFor, fireEvent } from '../../test-utils';
 
-const mockFetch: any = jest.fn(() => ({
-  json: async () => ({ products: productsApi })
+const mockFetch = jest.fn().mockResolvedValue({
+  data: { products: productsApi }
+});
+
+jest.mock('../../../src/global/services', () => ({
+  api: {
+    get: async () => mockFetch()
+  }
 }));
-global.fetch = mockFetch;
 
 const mockNavigate = jest.fn();
 jest.mock('@react-navigation/native', () => ({
@@ -21,7 +26,7 @@ jest.mock('@react-navigation/native', () => ({
   })
 }));
 
-describe('ProductDetailsScreen', () => {
+describe('ProductListScreen', () => {
   beforeEach(() => {
     jest.clearAllMocks();
   });
@@ -50,6 +55,17 @@ describe('ProductDetailsScreen', () => {
       expect(mockNavigate).not.toHaveBeenCalled();
       fireEvent.press(product);
       expect(mockNavigate).toBeCalled();
+    });
+  });
+
+  it('should call function on api error', async () => {
+    mockFetch.mockRejectedValueOnce({ message: 'error' });
+    const consoleSpy = jest.spyOn(console, 'log');
+    expect(consoleSpy).not.toHaveBeenCalled();
+    await waitFor(async () => {
+      render(<ProductsListScreen />);
+      await waitFor(() => expect(mockFetch).toHaveBeenCalledTimes(1));
+      expect(consoleSpy).toHaveBeenCalledTimes(1);
     });
   });
 });

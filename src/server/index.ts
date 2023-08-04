@@ -8,12 +8,13 @@ export function makeServer({ environment = 'development' } = {}) {
       product: Model
     },
     routes() {
-      this.get('/api/products', () => {
+      this.urlPrefix = 'https://api.ton/v1/';
+      this.get('products', () => {
         return {
           products: productsApi
         };
       });
-      this.get('/api/products/:id', (_, request) => {
+      this.get('products/:id', (_, request) => {
         const id: string = request.params.id;
         return productDetailsApi.find(product => product.id === Number(id)) || {};
       });
